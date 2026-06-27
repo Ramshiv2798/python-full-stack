@@ -1,0 +1,99 @@
+""" python  Day 4 : List Data Type
+       <<<<<<<<<<<<<<<<<<<<<<<<<,,
+ -> List is acollection of differnt Datatupes that are enclosed in [] separeted by,
+ -> list is muttable
+
+
+"""
+"""
+all_types = [1, 'python', [1,2]]
+for j in all_types:
+    print(j)
+""
+so = "python is a language"
+print(so.replace('python', 'c'))
+print(so.replace('java' , 'python'))
+"""
+#1.append
+#2.
+""
+#list methods
+#1. append:-> THis is used to add new item into list , but it will add in the last index position
+'''
+any_ = [1,2,3,4]
+print(any_)
+any_.append(5)
+print(any_)
+any_.append(10)
+print(any_)
+''
+'''
+any_=[1,2,3,4]
+any_.append(5)
+print(any_)
+any_.append(10)
+any_.append('python')
+print(any_)
+
+#Extend : This is also add a item in the index position, but it will given each value in the each index position.
+#---> 
+'''
+'''
+any_=[1,2,3,4]
+any_.extend('python')
+print(any_)
+print(len(any_))
+
+
+any_ = [1,2,'python is a language', [45, 78, 'java is a language ',[1,23],90],'hello']
+print(any_[2])
+''
+#pop():used to del the value from the list but it will del based on index position
+#syntax -->> Variable_name.pop(index position)
+#eg: 
+any_ = [1,2,45,78,23,90]
+any_.pop(1)
+print(any_)
+#remove():used to del the item from the list, but it will del direct value from list.
+#syntax : variable.remove(Value)
+#Eg:
+any_=[1,2,45,56,23]
+any_.remove(2)
+print(any_)
+""
+'''
+#tuple :it is a collection of differnt datatypes represent in() and seperated by,
+---> it is immutable
+'''
+how = (1,2,3,4,'python',[4,5],(90,78))
+print(how[5])
+print(how.count('python'))
+
+
+eny_ = [78,45,34,1]
+eny_.sort()
+print(eny_)
+
+
+
+""
+#muttable                                                       
+#the Datatype can be modified                                
+#List                                                          
+'''
+
+any_ = [1,2,3,4]                                                                                                             
+print(any_)
+any_.append(5)
+print(any_)
+any_.append(10)                                             
+print(any_)                                                    
+#imuttable
+#canot be modified
+#String
+so = 'python is a language'
+print(so.replace('python','c'))
+'''
+any_ = [56,[1,2],['python ','java',['python is a language', 153,90],[78,6],'I Know c']]
+print(any_[2][2][1])
+print(any_[2][4][2:6])
