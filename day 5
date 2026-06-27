@@ -1,0 +1,138 @@
+#Dictionary
+#Dict is a key : value pair separted by :, and keys are unique
+ #in the place of keys we have use immutable data type ..
+#methods: keys , values , items
+'''
+1.keys()
+used to get all the keys from the dict
+syntax : varaible_name.keys()
+
+details_= {"Name" : "rudra",
+           "Age":23,
+           "gender" : "male"}
+print(details_.keys())
+#2.values()
+
+#syntax: variable_name.values()
+''
+details_= {"Name" : "rudra",
+           "Age":23,
+           "gender" : "male"}
+print(details_.values())
+
+
+#3.items()
+
+#syntax : variable_name.items()
+'
+'''
+details_= {"Name" : "rudra",
+           "Age":23,
+           "gender" : "male"}
+print(details_.items())
+""
+''
+''
+details_= {'name' : 'rama',
+           1:"number",
+           (6,7): [1,2]}
+print(details_)
+
+
+#4. clear():
+#syntax -->>variable_name.clear()
+''
+details_= {'Name' : 'Rama',
+           1:"Number",
+          (6,7): [1,2]}
+details_.clear()
+print(details_)
+
+#5.update:
+
+#syntax: variable_name.update()
+
+details_= {'Name' : 'Rama',
+           'Age':"22",
+          (6,7): [1,2]}
+details_.update({'Name': 'Deva'})
+details_.update({'Age': '26'})
+details_.update({"mob": 84932445712})
+print(details_)
+
+any_ = [22,45,6,7]
+print(any_[0])
+details_= {'Name' : 'Rama',
+           1:"Number",
+           (6,7): [1,2]}
+print(details_["Name"])
+
+     #Set
+     
+#--->>> set is collection of unordered elements that are seperated by ,
+#--->>> set is muttable
+#--->>> it can remove duplicate value of itself.....
+go = {1,2,3,4,2}
+print(go)
+''
+#methods
+''
+#1.union ()(|)
+#syntax : set1_.union(set2)
+
+go = {1,23,4,5}
+do = {12,45,56}
+print(go | do)
+print(go.union(do))
+
+#2.intersection
+#syntax: set_1.intersection(set2)
+#symbol: &
+'''
+go = {1,2,3,4}
+do = {4,5,6,7}
+print(go & do)
+print(go.intersection(do))
+'''
+#3.Symmetric Difference()
+# all different elements from both sets
+# syntax : set_1.symmetric_difference(set2)
+#symbol : ^
+'''
+go = {1,2,3,4}
+do = {4,5,6,7}
+print(go ^ do)
+print(go.symmetric_difference(do))
+'''
+#4.add()
+#syntax : set_1.add()
+go = {1,2,3,4,5}
+go.add(6)
+print(go)
+
+
+#5.remove(): to del the elements from set
+#syntax : set_1.remove()
+go = {1,2,3,4,5}
+go.remove(2)
+print(go)
+
+#6.pop
+#syntax : set_1.pop()
+go = {1,2,3,3,7,4,5}
+go.pop()
+print(go)
+
+#7.discard: to del the elements from set
+#syntax : set_1.discard()
+go = {1,2,3,3,7,4,5}
+go.discard(3)
+print(go)
+
+
+
+
+
+
+
+
