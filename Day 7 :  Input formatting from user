@@ -1,0 +1,50 @@
+''''
+   Input formatting from user '''
+# input(): the input() function is used to take input from the user...
+#1. int
+'''
+eg :
+num = int(input("Enter a number:"))
+num_2 = int(input("Enter a number:"))
+print(num + num_2)
+'''
+#2.string :
+'''eg:
+how = input("enter a char:")
+print(how + 'rudra')
+'''
+#3.float :
+'''eg 
+num = float(input("Enter your salary:"))
+print(num, "is the monthly salary")
+'''
+#4.list
+
+'''
+group_ = list(map(int, input().split()))
+print(group_)
+'''
+#5.tuple:
+'''
+some = tuple(map(int,input().split()))
+print(some)
+
+num = eval(input("Enter : "))
+print(type(num))
+'''
+
+#f str:
+'''
+eg
+name_ = input("enter your name : ")
+age_ = input("enter your Age : ")
+print(name_,"youre age is ",age_)
+print(f"{name_} your age is {age_}")
+'''
+#modules formatting (%):
+'''
+name_ = input("enter your name : ")
+age_ = input("enter your Age : ")
+print("My name is %s and i'm %s years old " % (name_, age_))
+'''
+
