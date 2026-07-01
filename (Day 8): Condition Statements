@@ -1,0 +1,179 @@
+'''
+condition statements
+--> condition statement(if , if-else, elif)
+--> control statements(break,continue, pause) 
+--> loop satatements(for, while)
+'''
+#1.condition statements:
+#1.if:
+'''
+->>it is used to check a condition is true or not
+num = 10
+if num % 2 ==0:
+    print(f"{num} is a even number")
+else:
+    print(f"{num} is a odd number")
+
+#if-else
+#nested if
+#elif
+if-else
+it is a fall-back statement incase the if condition is file
+num = 9
+if num % 2 ==0:
+    print(f"{num} is a even number")
+else:
+    print(f"{num} is a odd number")
+'''
+'''
+rama_SBI_details = {"ATM PIN":'5002'}
+pin_ = input("Enter your 4  digit ATM PIN:")
+if pin_ in rama_SBI_details["ATM PIN"]:
+    print("Welcome to SBI ATM")
+else:
+    print("You have entered incorrect pin")
+'''
+#nested if: if inside the another if is called as nested if
+'''
+rama_SBI_details = {"ATM PIN":'5002'}
+pin_ = input("Enter your 4  digit ATM PIN:")
+if len(pin_) == 4:
+    if pin_ in rama_SBI_details["ATM PIN"]:
+        print("Welcome to SBI ATM")
+    else:
+        print("You have entered incorrect pin")
+else:
+    print("pls entered only 4 digit pin") 
+
+'''
+#elif : to check of values for multiple values
+'''
+marks=int(input('Enter marks: '))
+if marks>=0 and marks<=100:
+    if marks >=90 : 
+        print('A+')
+    elif marks >= 80:
+        print('A')
+    elif marks >= 70:
+        print('B')
+    elif marks >= 60:
+        print('B')
+    elif marks >= 50:
+        print('B')
+    elif marks >= 40:
+        print('B')
+    else:
+        print('FAILED')
+else:
+    print('Enter valid marks(max 100,min 0)')
+    '''
+#max of 3 numbers
+'''
+a = int(input("Enter the a: "))
+b = int(input("Enter the b: "))
+c = int(input("Enter the c: "))
+
+max_num = a
+
+if b > max_num:
+    max_num = b
+
+if c > max_num:
+    max_num = c
+
+print("The maximum number is:", max_num)
+'''
+#vowels and consontant using if conditions in given 
+
+text = input("Enter a string: ")
+vowels = 0
+consonants = 0
+for ch in text:
+    ch = ch.lower()
+    if ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u':
+        vowels += 1
+    elif ch >= 'a' and ch <= 'z':
+        consonants += 1
+print("Number of vowels:", vowels)
+print("Number of consonants:", consonants)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
