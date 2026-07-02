@@ -1,0 +1,126 @@
+''' loop
+#1.for loop: a for loop is used to itterate over a sequence , list,tuple, dict
+2.while loop
+'''
+'''
+#eg 1:
+any_ = "Python is a language"
+for j in any_:
+    print(j)
+
+#eg 2:List
+any_= [1,2,3,4,5]
+for j in any_:
+    print(j) 
+# eg 3: tuple
+any_= (1,2,3,4,5)
+for j in any_:
+    print(j) # for j in any_ : is a instant variable
+    
+any_ = {"Name": "Rama",
+         "role": "developer"}
+for key in any_.values():
+    print(key)
+'''
+'''
+#else in for loop :
+the else block will be executed after the for loop, but incase the loop is breaked then it will never entered in the else block
+ex 1:
+any_ = [1,2,3,4,5]
+for val in any_:
+    print(val)
+else:
+    print("program Ended")
+
+ex 2:
+any_ = [1,2,3,4,5,6]
+for j in any_:
+    print(j)
+    if j == 4:
+        break
+else:
+    print("Entered")    
+'''
+#while loop
+
+'''
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+
+'''
+age = int(input("Enter your age: "))
+assert age >= 18, "you must have 18 years"
+#----------------------------control statements ----------------------------------
+
+#1.break:the break is used exit from the loop
+'''
+any_ = [1,2,3,4,5,6]
+for j in any_:
+    print(j)
+    if j == 3:
+        break
+else:
+    print("Entered")
+
+'''
+    
+# 2. continue:the continue will skip the current itteration
+#
+'''
+
+any_ = [1,2,3,4,5,6]
+for j in any_:
+    
+    if j == 2:
+        continue
+    print(j)
+else:
+    print("Entered")
+
+
+'''
+#3. pass
+'''#----------
+#--> space holder
+any_= [1,2,3,4,5]
+for j in any_:
+    pass
+
+'''
+'''
+#for loop topic (range):range() is a built-in function that is used to generate a sequence upto a linit
+#syntax : range(start, end, step)
+all = [1,2,3,4,5,6,7,8,9,10]
+for j in range(25, 100, 2):
+    print(j)
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
