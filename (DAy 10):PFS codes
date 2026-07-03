@@ -1,0 +1,96 @@
+'''
+prime number(single)
+
+
+num = int(input("enter a number: "))
+count = 0
+for j in range(1,num + 1):
+    if num % j == 0:
+        count+= 1
+if count == 2:
+    print(f"{num} is a prime ")
+else:
+    print(f"{num} is not a prime")
+
+#2. prime number
+limit_ = 10
+for j in range(1,limit_+1):
+    count = 0
+    for i in range(1, j+1):
+        if j % i == 0:
+            count += 1
+            print(count)
+
+    if count == 2:
+        print(f"{j} is a prime")
+
+'''
+'''
+#pyramid 
+#1.right angle triangle
+*
+**
+***
+****
+******
+#eg:
+num = 15
+for j in range(1,num +1):
+    for i in range(1,j+1):
+        print("**, end = "")
+    print()
+
+#eg :
+num = 5
+for j in range(1, num + 1):
+    for i in range(1, j+1):
+         print(j, end = "  ")
+    print()
+#eg 3:
+num = 5
+for j in range(1, num + 1):
+    for i in range(1, j+1):
+         print(i, end = "  ")
+    print()
+
+#eg 4: remove duplicate
+num = 4
+count = 0
+for j in range(1, num + 1):
+    for i in range(1, j+1):
+        count += 1
+        print(count, end = "  ")
+    print()
+
+#eg 5:    
+num = 5
+count = 0
+for j in range(num,0,-1):
+    for i in range(1, j+1):
+        count += 1
+        print(i, end = "  ")
+    print()
+'''
+
+'''amstrong number
+#eg :
+am_str = int(input("Enter a number:  "))
+length_= len(str(am_str))
+all_sum = 0
+for j in str(am_str):
+    all_sum += int(j) ** length_
+if all_sum == am_str:
+    print(f"{am_str} is amstrong")
+else:
+    print(f"{am_str} is not amstrong")
+'''
+'''pyramids:
+     *
+  *  *  *
+'''
+#eg:
+num = 10
+for j in range(num):
+    print(" " *(num -j - 1), end = " ")
+    print("*" *(2 * j + 1))
+
