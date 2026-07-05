@@ -1,0 +1,120 @@
+'''' palindrome
+'''
+'''
+so= "deva
+empty_ = ""
+for j in so:
+    empty_ = j+ empty_
+    print(empty_)
+'''
+'''#palindrom
+
+so= "teja"
+empty_ = ""
+for j in so:
+    empty_ = j+ empty_
+if empty_ == so:
+    print("palindrome")
+else:
+    print(f"{so} is not palindrome")
+'''
+'''
+so = input("Enter a word:")
+empty_ = ""
+for j in so:
+    empty_= j + empty_
+if empty_ == 0:
+    print(f"{so}  palidrom")
+else:
+    print(f"{so} is not palidrom")
+'''
+
+'''
+Fibonacci sequence:
+num = 0
+num_2 = 1
+limit_= int(input("Enter a number:"))
+print(num, num_2, end= " ")
+for i in range(1, limit_ +1):
+    all_= num + num_2
+    num = num_2
+    num_2 = all_
+    print(all_, end = " ")
+'''
+''' calculator 
+val_1 = int(input("Enter a number: "))
+val_2 = int(input("Enter a number: "))
+user_in = int(input("Enter :\n1.add \n2.sub \n3.mul \n4.pow: "))
+if user_in == 1:
+    print(val_1 + val_2)
+elif user_in == 2:
+    print(val_1 - val_2)
+elif user_in == 3:
+    print(val_1 * val_2)
+elif user_in == 4:
+    print(val_1 ** val_2)
+    '''
+'''
+table for any number
+
+table_ = 10
+for val in range(1,21):
+    print(f"{table_} % {val} = {table_ * val}")
+
+table_1 = int(input("Enter a number: "))
+for val in range(1,20):
+    print(f"{table_1} % {val} = {table_1 * val}")
+'
+perfect number :
+if all the factors are add to get the same number:
+num = int(input("Enter a number: "))
+sum = 0
+for j in range(1, num):
+    if num % j == 0:
+       sum += j
+if sum == num:
+    print(f"{num} is a perfect number ")
+else:
+    print(f"{num} is not a  perfect number ")
+'''
+''' ATM -------------------------------------------------
+
+# ATM code
+
+details = { "Name" : "Ekanth",
+            "ATM PIN" : "3004",
+            "Balance" : 100000 }
+print("-----------WELCOME------------")
+print()
+user_pin = input("pls enter your 4 digit pin: ")
+if len(user_pin) == 4:
+    if user_pin in details['ATM PIN']:
+        choice = int(input("1.withdraw \n2.deposit \n3.balance \nEnter your choice: "))
+        if choice == 1:
+            withdraw_m = int(input("pls enter amount to withdraw: "))
+            if withdraw_m <= details['Balance'] and withdraw_m%100 == 0:
+                details['Balance'] -= withdraw_m
+                print(f"succesfully withdraw {withdraw_m} and balance is {details['Balance']}")
+            else:
+                print("entered amount is insufficient or change is not withdrawed")
+        elif choice == 2:
+            deposit_m = int(input("pls enter amount to deposit: "))
+            if deposit_m%100 == 0:
+                details['Balance'] += deposit_m
+                print(f"succesfully deposit {deposit_m} and balance is {details['Balance']}")
+            else:
+                print("change is not withdrawed")
+        else:
+            print(f"Your balance is {details['Balance']}")
+            
+    else:
+        print("pls enter correct 4 digit pin")
+else:
+    print("pls enter only 4 digit pin")
+
+
+'''
+
+
+
+
