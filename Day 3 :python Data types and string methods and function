@@ -1,0 +1,94 @@
+'''
+                                            DAY 3 - PYTHON DATATYPES AND STRING METHODS & FUNCTIONS
+
+Datatype:
+
+int:
+ex:
+    num = 8
+    print(num)
+
+float:Decimal numbers are float values
+ex:
+    num_2 = 7.89
+    num = 6.89
+    print(num//2)
+
+string:
+-> String is sequence of character that are enclosed in ' ', " ", """ """
+-> String is immutable
+ex:
+    so = ("Python")
+    print(so)
+
+Concatination:
+-> Here, the (+) operator act as to concatinate more than 2 strings.....
+ex:
+    print("python"+" "+"langauge")
+
+Indexing:
+-> Indexing is used to access the particular char in the string by pass index position value.
+-> index start from 0.....
+-> we have negative indexing to count positions from last to first...
+ex:
+    so = "python"
+    print(so[5])
+
+Python methods:
+1.replace()
+2,join()
+3.split()
+4.count()
+
+1.replace():
+-> This method is used to change any substring in that particular string
+syntax -> variable_name.replace("old_string","new_string",count)
+
+ex:
+    so = "python is a langauge"
+    print(so.replace("python","java"))
+    print(so)
+    print(so.replace("a","A",2))
+
+2.join():
+-> This method used to add new substring after each char in the string...
+syntax -> "string".join(variable_name)
+ex:
+    so = "python is a langauge"
+    print("-".join(so))
+
+3.split():
+-> This method can divide the string into different index into list, based on the string pass by us...
+syntax -> variable_name,split('substring')
+ex:
+    so = "python is a langauge"
+    print(so.split(" "))
+    print(so.split("is"))
+
+4.count():
+-> it is used to count the substring in the particular string and also specify particular range of positions.
+syntax -> variable_name.count("substring",start index,end index)
+ex:
+    so = "python is a langauge"
+    print(so.count('a'))
+    print(so.count('a',0,11))
+
+string built-in function:
+1.len():
+-> This will find the length of the string, which is number char present in that string
+ex:
+    so = "python is a langauge"
+    print(len(so))
+
+2.max()
+-> it gives you the max char in string
+ex:
+    so = "python is a langauge"
+    print(max(so))
+
+3.min()
+-> it gives you the min char in string
+ex:
+    so = "python"
+    print(min(so))
+'''
