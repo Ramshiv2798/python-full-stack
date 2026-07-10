@@ -1,0 +1,123 @@
+''' --------------Generates -----------------
+#this generator is special function that returns the iterator , instead of returning
+all the values at once.
+# Here we are going to use yield keyword.
+ex :
+def some():
+    yield 1
+    yield 2
+    yield 3
+so = some()
+print(next(so))
+print(next(so))
+print(next(so))
+'''
+''' working of generator
+ # when a function is called
+ # it does not executive the function immediately
+ # it will returns the generator object
+ # Then the function will pauses at each yield
+ # when the next()  is called again, execution resumes from where it stopped
+
+
+
+
+  
+ex2:
+def demo():
+    print("Start")
+    yield 1
+
+    print("Middle")
+    yield 2
+
+    print("End")
+    yield 3
+
+how = demo()
+print(next(how))
+print(next(how))
+print(next(how))
+
+ex 3
+def how(so):
+    for i in range(so):
+        yield i*i
+any_ = how(5)
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+''
+#without Generator 
+
+
+def sqt(n):
+    for j in range(n):
+        print(j*j)
+sqt(6)
+# difference btn generator  vs function
+    Function                                            Generator
+   # return                                            # yield
+   # return complete result                            # return one value at once
+   # more memory usage                                 # less memory usage
+   #This function never resume                          #paues after every yield
+#.Function will end after the return the values           #resume after next()
+
+------yield function---------
+#this will produce the value
+# but the yield pauses the function
+# and yield will save the functions current state
+#yield will continues where it stopped.
+
+@next() Function:
+--> The next() function is used to retrieve the next value from a generator
+#@ StopIteration
+--------------
+--> Calling next() fuction after all values retrieve then it will raise
+StopIteration exception
+
+
+ex 4:
+def how(so):
+    for i in range(so):
+        yield i*i
+any_ = how(5)
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+print(next(any_))
+
+
+
+ex :
+def sum(n):
+    for i in range(n):
+        yield i + i
+so_ = how(n)
+print(next(so_))
+print(next(so_))
+print(next(so_))
+print(next(so_))
+print(next(so_))
+print(next(so_))
+print(next(so_))
+print(next(so_))
+print(next(so_))
+'''
+''' Gnerator expression
+#this generator expression is similar to a list comprehension but uses
+parenthesis () instead of []
+'''
+gen = (x*x for x in range(5))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
