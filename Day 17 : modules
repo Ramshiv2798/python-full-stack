@@ -1,0 +1,59 @@
+''' modules:
+A module is a python file (.py) that contains reuable code
+1.variable()
+2.Functions
+3.classes
+4.objects
+5.Statements
+why this
+# Instead of writing the same code repeatedly , we can store it in a modules
+and use it whenever needed.
+Types of modules:
+1.user-define
+2.built-in
+#import specific Function:
+#1.eg
+import first_module
+print(first_module.sub(45,7))
+print(first_module.mul(45,7))
+print(first_module.div(45,7))
+eg 2: 
+import first_module as m
+print(m.sub(45,7))
+
+#2.built-in :
+math, os,sys,random
+sqrt() -- square root
+factorial() --> factorial
+pow() ----> power
+ceil() ---> roundup
+pi ---> pi value
+#1.math is a for mathematical operations
+import math
+print(math.sqrt(256))
+print(math.factorial(5))
+print(math.pow(2,5))
+print(math.pi)
+#os:
+the os module is used to interact with operating system
+getcwd() --> current directory
+mkdir () --> create a new file.
+rmkdir () -- > to remove the new filr
+ex :
+import os
+print(os.getcwd())
+os.mkdir('rama')
+#sys: 
+this will provide the information about python interpreter
+eg 3:
+import sys
+print(sys.version)
+#Random : it is used to generate random values
+eg :
+import random
+print(random.randint(1000,9999))
+eg :
+import random
+colors = ['red', 'blue', 'green', 'yellow']
+print(random.choice(colors))
+'''
