@@ -1,0 +1,67 @@
+'''
+
+                                    DAY 20 - PYTHON CONCEPTS
+
+OOPs:
+-------
+-> Object Oriented Programming system (oops), This wil be organizes the code using classes and objects..
+
+Uses of OOPs
+-------------
+-> Code reusable
+-> Easy Maintaince
+-> Clear Understanding
+-> Better security
+
+Classes
+---------
+Class is a blue-print or a templete used to create an object....
+ex:
+'''
+class Batch_4:
+    pass
+'''
+
+Object
+-------
+-> Object is a instance of the class
+ex:
+'''
+class student:
+    studn = 'Rama'
+st_ = student()
+print(st_)
+'''
+
+Attributes:
+-------------
+-> Attributes are the variable that belongs to an object or the calss
+ex:
+'''
+class how:
+    def nam(self,name,age):
+        self.name = name
+        self.age = age
+        
+sl = how()
+sl.nam('Rama ',21)
+print(sl.name)
+'''
+
+Methods:
+----------
+-> Methods are nothing but , the functions inside the class
+ex:
+----
+'''
+class calculator:
+    def add(Self,num,num_2):
+        print(num+num_2)
+    def sub(Self,num,num_2):
+        print(num-num_2)
+        
+cal = calculator()
+cal.add(45,6)
+cal.sub(88,8)
+
+
